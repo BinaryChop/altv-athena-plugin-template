@@ -1,7 +1,9 @@
-import * as alt from 'alt-server';
-import { PluginSystem } from '../../../server/systems/plugins';
-import { EXAMPLE_CONFIG } from '../shared/config';
+import * as alt from "alt-server";
+import { PluginSystem } from "@AthenaServer/systems/plugins";
+import { INDEX_CONFIG } from "../shared/config";
 
-PluginSystem.registerPlugin(EXAMPLE_CONFIG.PLUGIN_NAME, () => {
-    alt.log(`~lg~${EXAMPLE_CONFIG.PLUGIN_NAME} was Loaded`);
+PluginSystem.registerPlugin(INDEX_CONFIG.PLUGIN_NAME, () => {
+
+  alt.log(`~lg~[PLUGIN] ==> ${INDEX_CONFIG.PLUGIN_NAME} V.${INDEX_CONFIG.VERSION} - Athena V.${INDEX_CONFIG.ATHENA_VERSION} successfully loaded.(~w~Authors: ${INDEX_CONFIG.AUTHORS.join(", ")}~lg~)`);
+
 });

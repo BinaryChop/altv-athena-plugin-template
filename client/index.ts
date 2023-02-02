@@ -1,4 +1,4 @@
 import * as alt from 'alt-client';
-import { EXAMPLE_CONFIG } from "../shared/config";
+import { INDEX_CONFIG } from "../shared/config";
 
-alt.log(`~lg~${EXAMPLE_CONFIG.PLUGIN_NAME} was Loaded`);
+alt.log(`~lg~${INDEX_CONFIG.PLUGIN_NAME} was Loaded`);
