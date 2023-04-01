@@ -1,8 +1,11 @@
 import * as alt from "alt-server";
-import { PluginSystem } from "@AthenaServer/systems/plugins";
+import * as Athena from '@AthenaServer/api';
 import { INDEX_CONFIG } from "../shared/config";
 
-PluginSystem.registerPlugin(INDEX_CONFIG.PLUGIN_NAME, () => {
+
+// Athena.systems.plugins.registerPlugin(PLUGIN_NAME, onLoad);
+
+Athena.systems.plugins.registerPlugin(INDEX_CONFIG.PLUGIN_NAME, () => {
 
   /* if (!alt.debug) {
         alt.log(`~lr~CORE ==> ${PLUGIN_NAME} can only be loaded in debug mode.`);
